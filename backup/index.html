@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/flowbite.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <title>Rotasipedia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        body, *{
+            font-family: 'Ubuntu', sans-serif;
+    
+            max-width: 100% ; 
+            min-width: 10%;
+         
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: aqua
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+    </style>
+</head>
+<body class="bg-kecil" >
+
+
+        <!-- web navbar -->
+<nav class="px-4 py-2.5   relative max-w-[1280px] z-20 top-0 left-0 box-border">
+    <div class="container flex web-navbar  items-center ">
+        <a href="#" class="flex items-center">
+            <span class="self-center text-3xl  font-bold whitespace-nowrap no-bottom text-red-600">MarketJunadi</span>
+        </a>
+        <div class="hidden justify-between items-center  md:flex ">
+            <ul
+                class="flex flex-col p-4 mt-4  rounded-lg border  md:flex-row md:space-x-5 md:mt-0 md:text-sm font-semibold md:border-0  ">
+                <li>
+                    <a href="#"
+                        class="block py-2 pr-4 pl-3 text-black button-hover active:bg-red-500 active:rounded-md"
+                        aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pr-4 pl-3 text-black  button-hover">About</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pr-4 pl-3 text-black button-hover ">FaQs</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pr-4 pl-3 text-black button-hover   ">Blog</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pr-4 pl-3 text-black button-hover  ">Testimonial</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex justify-end items-center gap-2">
+            <button type="button"
+                class=" hilang text-red-600 hover:bg-gray-100 bg-transfarant w-[100px] h-[37px] font-semibold  p-1 rounded-md border border-red-600">
+                Login
+            </button>
+            <button type="button"
+                class="hilang text-white hover:bg-red-500 bg-slate-200 w-[100px] h-[37px] font-semibold  p-1 rounded-md bg-red-600">Daftar
+            </button>
+        </div>
+
+        <!-- hamburger mobile -->
+        <button data-collapse-toggle="navbar-sticky" type="button"
+            class="flex justify-center mr-[-10px]  text-sm text-gray-500 box-border rounded-lg md:hidden  atas"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <!-- <span class="sr-only">Open main menu</span> -->
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="34" height="34" rx="5" fill="#FEC513" />
+                <rect x="26.4752" y="22.5409" width="1.44261" height="19.4753" rx="0.721307"
+                    transform="rotate(90 26.4752 22.5409)" fill="white" />
+                <rect x="26.4752" y="16.7705" width="1.44261" height="19.4753" rx="0.721307"
+                    transform="rotate(90 26.4752 16.7705)" fill="white" />
+                <rect x="26.4752" y="11" width="1.44261" height="19.4753" rx="0.721307" transform="rotate(90 26.4752 11)"
+                    fill="white" />
+            </svg>
+        </button>
+        <!-- end hamburger mobile -->
+        <!-- end navbar web -->
+
+    </div>
+    <!-- mobile navbar -->
+    <div class="xl:hidden  md:hidden hidden mt-3 top-0    rounded-lg justify-between items-center w-full bg-white flex md:w-auto md:order-1"
+        id="navbar-sticky">
+        <ul class="flex flex-col p-4 mt-4 z-30 rounded-lg box-border md:flex-row  md:mt-0 md:text-sm font-semibold  ">
+            <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-white bg-yellow-300 rounded  md:p-0 "
+                    aria-current="page">Home</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded  ">About</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded  ">FaQs</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded  ">Blog</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded  ">Testimonial</a>
+            </li>
+            <li class=" space-y-1">
+                <button type="button"
+                    class=" block  text-red-600 hover:bg-gray-100 bg-transfarant w-[100px] font-semibold border py-2 pr-4 pl-3 md:p-0 rounded-md  border-red-600">
+                    Login
+                </button>
+                <button type="button"
+                    class="block text-white hover:bg-red-500 bg-slate-200 w-[100px] font-semibold py-2 pr-4 pl-3  p-1 md:p-0 rounded-md bg-red-600">Daftar
+                </button>
+            </li>
+        </ul>
+    
+    </div>
+    <!-- end navbar mobile -->
+</nav>
+
+<!-- jumbotron  -->
+<main class="tengah-fix py-2.5 max-w-[1280px]  mt-[7rem]  md:mt-[12rem] xl:mt-[12rem]">
+    <div class="container flex">
+       <div class="judul-awal flex-col flex-1  space-y-4 max-w-[680px] text-mobile ">
+        <h1 class="sm:text-[47px] text-[30px] font-bold">SMM Panel & PPOB H2H Termurah</h1>
+        <p class=" text-[15px] font-semibold text-gray-600">Sebuah Platform bisnis yang menyediakan berbagai kebutuhan Sosial Media seperti Instagram, Youtube, Facebook, Twitter,
+        dll.
+        layanan Pulsa All Operator, Token PLN, Paket Data, Saldo E-money, Voucher Game, Tagihan PASCABAYAR dan Banyak lagi.</p>
+
+        <div class="container button-get">
+            <a class="flex justify-center cursor-pointer items-center w-[150px] bg-yellow-300 p-2 rounded-lg">Daftar Sekarang</a>
+        </div>
+       </div>
+
+       <div class="gambar p-0 m-0 hilang flex-0">
+        <img  src="assets/images/gambar-kanan.svg" class=" p-0 image-responsive absolute top-0 right-0 translate-x-6" alt="">
+        </div>
+    </div>
+</main>
+<!-- jumbotron end -->
+
+<!-- backgoound warna -->
+<div class="conten-bg-warna"></div>
+
+<!-- card statistik -->
+<div class="py-2.5  max-w-[1280px] px-[14px] ml-0 flex flex-col justify-between  dark:bg-gray-900 mt-[7rem]  md:mt-[9rem] xl:mt-[9rem]">
+
+    <div class=" flex web-navbar justify-center flex-col mb-2 container text-center items-center  ">
+        <h1 class="text-3xl font-semibold text-center">Data Statistik Kami</h1>
+    </div>
+
+    <div class="flex flex-wrap justify-between">
+        <a href="#"
+            class="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions
+                2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of
+                2021 so far, in reverse chronological order.</p>
+        </a>
+        <a href="#"
+            class="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions
+                2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of
+                2021 so far, in reverse chronological order.</p>
+        </a>
+        <a href="#"
+            class="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions
+                2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of
+                2021 so far, in reverse chronological order.</p>
+        </a>
+
+    </div>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
