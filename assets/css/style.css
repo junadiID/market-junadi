@@ -555,8 +555,8 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 @media (min-width: 480px) {
@@ -649,8 +649,8 @@ video {
   left: -4rem;
 }
 
-.z-10 {
-  z-index: 10;
+.z-20 {
+  z-index: 20;
 }
 
 .-z-50 {
@@ -809,10 +809,6 @@ video {
   align-self: center;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .break-words {
   overflow-wrap: break-word;
 }
@@ -886,14 +882,6 @@ video {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .p-1 {
@@ -1092,6 +1080,7 @@ video {
 
 body{
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden
 }
 
 .navbar-fixed {
@@ -1160,7 +1149,8 @@ body{
 
 .conten-bg-warna{
   background-image: url(../images/bg-atas-color.svg);
-  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 700px;
   top: 0;
   z-index: -100;
@@ -1222,10 +1212,6 @@ body{
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:overflow-x-hidden {
-    overflow-x: hidden;
   }
 }
 
@@ -1335,10 +1321,6 @@ body{
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:overflow-x-hidden {
-    overflow-x: hidden;
   }
 
   .lg\:rounded-none {

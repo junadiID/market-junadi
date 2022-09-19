@@ -2,10 +2,8 @@
 
   function addtogle() {
    var hamburger = document.getElementById("hamburger");
-   var navMenu = document.getElementById('navMenu');
 
    hamburger.classList.toggle("hamburger-active");
-   navMenu.classList.toggle("bg-nav-mobil");
    navMenu.classList.toggle("hidden");
 }
 
@@ -18,6 +16,10 @@ window.onscroll = function(){
     header.classList.add("navbar-fixed");
   } else {
         header.classList.remove("navbar-fixed");
+     
   }
+
+
 }
+
 

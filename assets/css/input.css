@@ -4,6 +4,7 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    @apply overflow-x-hidden
 }
 
 .navbar-fixed{
@@ -51,7 +52,8 @@ body{
 
 .conten-bg-warna{
     background-image: url(../images/bg-atas-color.svg);
-    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 700px;
     top: 0;
     z-index: -100;

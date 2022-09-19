@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Market Junadi</title>
 </head>
-<body class="lg:overflow-x-hidden md:overflow-x-hidden overflow-x-hidden">
+<body class="conten-bg-warna">
 
 <!-- header start -->
-<header class="bg-transparent absolute items-center top-0 left-0 w-full flex z-10 box-border">
+<header class="bg-transparent relative items-center top-0 left-0 w-full flex z-20">
   <div class="container">
     <div class="flex items-center justify-between relative">
       <div class="px-3">
@@ -18,13 +18,15 @@
       </div>
 
       <div class="flex items-center px-3">
-        <button onclick="addtogle()" id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+        <button onclick="addtogle()" id="hamburger" name="hamburger" type="button"
+          class="block absolute right-4 lg:hidden">
           <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
           <span class="hamburger-line transition duration-300 ease-in-out"></span>
           <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
         </button>
 
-        <nav id="navMenu" class="hidden lg:mx-[64px] lg:block absolute right-4 top-full py-5  border-solid border-gray-300 border-[1px]  shadow-lg rounded-lg max-w-[250px] w-full lg:static lg:border-none lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none transition-all ease-in-out duration-300 ">
+        <nav id="navMenu"
+          class="hidden bg-white lg:mx-[64px] lg:block absolute right-4 top-full py-5  border-solid border-gray-300 border-[1px]  shadow-lg rounded-lg max-w-[250px] w-full lg:static lg:border-none lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none transition-all ease-in-out duration-300 ">
           <ul class="block lg:flex">
             <li class="group">
               <a href="#home" class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Beranda</a>
@@ -36,7 +38,8 @@
               <a href="#kontak" class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Kontak</a>
             </li>
             <li class="group">
-              <a href="#testimonial" class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Testimonial</a>
+              <a href="#testimonial"
+                class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Testimonial</a>
             </li>
             <li class="group">
               <a href="#FaQs" class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">FaQs</a>
@@ -44,19 +47,19 @@
 
             <li class="group lg:ml-[90px]">
               <div class="block flex justify-center lg:mr-[-80px] box-border">
-                  <button type="button"
-                    class="flex justify-center items-center mx-5 py-2 hilang text-red-600 hover:bg-gray-100 bg-white bg-opacity-50 w-[100px] h-[37px] font-semibold  p-1 rounded-md border border-red-600">
-                    Login
-                  </button>
-                  <button type="button"
-                    class="flex justify-center items-center  mx-5 py-2 text-white hover:bg-red-500 w-[100px] h-[37px] font-semibold  p-1 rounded-md bg-red-600">Daftar
-                  </button>
+                <button type="button"
+                  class="flex justify-center items-center mx-5 py-2 hilang text-red-600 hover:bg-gray-100 bg-white bg-opacity-50 w-[100px] h-[37px] font-semibold  p-1 rounded-md border border-red-600">
+                  Login
+                </button>
+                <button type="button"
+                  class="flex justify-center items-center  mx-5 py-2 text-white hover:bg-red-500 w-[100px] h-[37px] font-semibold  p-1 rounded-md bg-red-600">Daftar
+                </button>
               </div>
             </li>
           </ul>
-         
+
         </nav>
-        
+
       </div>
 
     </div>
@@ -66,193 +69,216 @@
 <!-- end Header -->
 
 
+<!-- hero start -->
+<section id="home" class="pt-36 lg:pt-52">
+  <div class="container">
+    <div class="flex flex-wrap justify-between">
+      <div class="w-full self-center px-3 lg:w-1/2">
+        <h1 class="text-4xl lg:text-6xl font-bold mt-1">SMM Panel & PPOB H2H Termurah</h1>
+        <p class="mb-10 pt-4 text-slate-500 leading-relaxed">Sebuah Platform bisnis yang menyediakan berbagai kebutuhan
+          Sosial Media seperti Instagram, Youtube, Facebook, Twitter,
+          dll.
+          layanan Pulsa All Operator, Token PLN, Paket Data, Saldo E-money, Voucher Game, Tagihan PASCABAYAR dan Banyak
+          lagi.</p>
 
-  <!-- hero start -->
-  <section id="home" class="pt-36 lg:pt-52" >
-      <div class="container">
-          <div class="flex flex-wrap justify-between">
-              <div class="w-full self-center px-3 lg:w-1/2">
-                  <h1 class="text-4xl lg:text-6xl font-bold mt-1">SMM Panel & PPOB H2H Termurah</h1>
-                  <p class="mb-10 pt-4 text-slate-500 leading-relaxed">Sebuah Platform bisnis yang menyediakan berbagai kebutuhan Sosial Media seperti Instagram, Youtube, Facebook, Twitter,
-                  dll.
-                  layanan Pulsa All Operator, Token PLN, Paket Data, Saldo E-money, Voucher Game, Tagihan PASCABAYAR dan Banyak lagi.</p>
-
-                  <a href="#" class="bg-primary text-sm lg:text-lg text-base flex justify-center font-semibold text-black px-1  py-3 lg:px-8 rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out w-32 lg:w-44 md:w-52">Daftar Harga</a>
-              </div>
-              <div class="w-full self-end px-3 hidden xl:block  lg:w-1/2">
-                  <img src="assets/images/gambar-kanan.svg" class=" max-w-full mx-auto absolute top-0 right-0 translate-x-3 2xl:hidden 5xl:hidden" alt="gambar kanan ">
-              </div>
-          </div>
+        <a href="#"
+          class="bg-primary text-sm lg:text-lg text-base flex justify-center font-semibold text-black px-1  py-3 lg:px-8 rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out w-32 lg:w-44 md:w-52">Daftar
+          Harga</a>
       </div>
-  </section>
-  <!-- end hero -->
-
-  <!-- data statistik -->
-  <section id="data-statistik" class="pt-28 lg:pt-24">
-    <div class="container">
-      <div class="flex justify-center lg:pt-24 lg:pb-4">
-        <h1 class="font-semibold text-3xl">Data Statistik Kami</h1>
-      </div>
-      <div class="flex flex-wrap justify-between box-border">
-        <div class="w-full self-center px-3 lg:flex justify-between items-center">
-          <div class="bg-card   border-solid  border-gray-400 py-4 my-2 shadow-md flex flex-col justify-center items-center text-center lg:w-[25%] h-40  my-3 rounded-md border border-gray-200">
-            <h2 class="text-red-500 font-bold text-4xl">250<span class="">+</span></h2>
-            <p class="font-semibold ">Total Pengguna</p>
-          </div>
-
-          <div class="bg-card-02 relative   border-solid border-gray-400 py-4 my-2 shadow-md flex flex-col justify-center items-center text-center lg:w-[25%] h-40  my-3 rounded-md border border-gray-200">
-            <h2 class="text-red-500 font-bold text-4xl">Rp3.450.22</span></h2>
-            <p class="font-semibold ">Total Pemesanan</p>
-          
-          <!-- color blue -->
-          <div>
-            <img src="assets/images/color-blue.svg" width="240"
-              class="border-none rounded-xl absolute -top-28 -z-50 -left-24 bottom-0" alt="">
-          </div>
-          <!-- end color blue -->
-
-          <!-- color a -->
-          <div>
-            <img src="assets/images/color-a.svg" width="240" class="border-none rounded-xl absolute top-12 -z-50 -right-14 bottom-0"
-              alt="">
-          </div>
-          <!-- end color a -->
-          </div>
-
-          <div class="bg-card border-solid border-gray-400 py-4 my-2 shadow-md flex flex-col justify-center items-center text-center lg:w-[25%] h-40  my-3 rounded-md border border-gray-200">
-            <h2 class="text-red-500 font-bold text-4xl">1054<span class="">+</span></h2>
-            <p class="font-semibold ">Total Layanan</p>
-          </div>
-
-        </div>
-        
+      <div class="w-full self-end px-3 hidden xl:block -z-50 lg:w-1/2">
+        <img src="assets/images/gambar-kanan.svg"
+          class=" max-w-full mx-auto absolute top-0 right-0 translate-x-3 2xl:hidden 5xl:hidden" alt="gambar kanan ">
       </div>
     </div>
+  </div>
+</section>
+<!-- end hero -->
 
-  </section>
-  <!-- end data stistik -->
-
-  <!-- bg bawah  -->
-  <div class="conten-bg-warna absolute bg-cover bg-center"></div>
-  <!-- end bg bawah -->
-
-  <!-- data card -->
-  <section id="data-statistik" class="pt-10 lg:pt-16">
-    <div class="container">
-      <div class="flex justify-center lg:pt-24 lg:pb-4">
-        <h1 class="font-semibold text-3xl">Keunggulan Kami</h1>
-      </div>
-      <div class="flex flex-wrap justify-between box-border">
-        <div class="w-full flex  flex-col justify-between lg:grid box-border items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-       
-            <div
-              class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
-              <img src="assets/icons/service.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
-              <div>
-                <h3 class="text-black font-bold text-md lg:text-xl">Layanan Terbaik</h3>
-                <p class="font-normal text-left text-sm lg:text-md">Kami menyediakan berbagai layanan terbaik untuk kebutuhan Anda.</p>
+<!-- data statistik -->
+<section id="data-statistik" class="pt-28 lg:pt-24">
+  <div class="container">
+          <div class="flex justify-center lg:pt-24 lg:pb-4">
+            <h1 class="font-semibold text-3xl">Data Statistik Kami</h1>
+          </div>
+          <div class="flex flex-wrap  justify-between">
+            <div class="w-full self-center px-3 lg:flex justify-between items-center">
+              <div
+                class="bg-card   border-solid  border-gray-400 py-4 my-2 shadow-md flex flex-col justify-center items-center text-center lg:w-[25%] h-40  my-3 rounded-md border border-gray-200">
+                <h2 class="text-red-500 font-bold text-4xl">250<span class="">+</span></h2>
+                <p class="font-semibold ">Total Pengguna</p>
               </div>
-            </div>
-            
-            <div
-              class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
-              <img src="assets/icons/rocket.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
-              <div>
-                <h3 class="text-black font-bold text-sm lg:text-xl">Proses Cepat</h3>
-                <p class="font-normal text-left text-xs lg:text-md">Pesanan Di Proses Secara Otomatis dan Instant,langsung kepada Server kami.
-                </p>
-              </div>
-            </div>
-            
-            <div
-              class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
-              <img src="assets/icons/money.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
-              <div>
-                <h3 class="text-black font-bold text-sm lg:text-xl">Deposite Saldo</h3>
-                <p class="font-normal text-left text-xs lg:text-md">Deposit Otomatis 24 Jam,Memudahkan anda deposit kapan saja.</p>
-              </div>
-            </div>
-            
-            <div
-              class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
-              <img src="assets/icons/support.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
-              <div>
-                <h3 class="text-black font-bold text-sm lg:text-xl">Pelayanan Bantuan</h3>
-                <p class="font-normal text-left text-xs lg:text-md">Kami menyediakan beberapa tempat bertanya atau komplain mulai dari tiket
-                  bantuan, telegram, whatsapp, facebook,
-                  Instagram.</p>
-              </div>
-            </div>
-            
-            <div
-              class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
-              <img src="assets/icons/device.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
-              <div>
-                <h3 class="text-black font-bold text-sm lg:text-xl">Desain Responsive</h3>
-                <p class="font-normal text-left text-xs lg:text-md">Kami Menggunakan Desain Website Yang Dapat Diakses Dari Berbagai Device,
-                  Daik Smartphone Android Maupun Desktop.</p>
-              </div>
-            </div>
-            
-            <div
-              class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
-              <img src="assets/icons/code.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
-              <div>
-                <h3 class="text-black font-bold text-sm lg:text-xl">Integritas Api</h3>
-                <p class="font-normal text-left text-xs lg:text-md">Kami Menyediakan / support pemesanan via API, Sangat Cocok Untuk Anda
-                  Pengguna H2H / operan.</p>
-              </div>
-            </div>
-
           
+              <div
+                class="bg-card-02 relative  border-solid border-gray-400 py-4 my-2 shadow-md flex flex-col justify-center items-center text-center lg:w-[25%] h-40  my-3 rounded-md border border-gray-200">
+                <h2 class="text-red-500 font-bold text-4xl">Rp3.450.22</span></h2>
+                <p class="font-semibold ">Total Pemesanan</p>
+          
+                <!-- color blue -->
+                <div>
+                  <img src="assets/images/color-blue.svg" width="240"
+                    class="border-none rounded-xl absolute -top-28 -z-50 -left-24 bottom-0" alt="">
+                </div>
+                <!-- end color blue -->
+          
+                <!-- color a -->
+                <div class="hidden lg:block">
+                  <img src="assets/images/color-a.svg" width="240"
+                    class="border-none rounded-xl absolute top-12 -z-50 -right-14 bottom-0" alt="">
+                </div>
+                <!-- end color a -->
+              </div>
+          
+              <div
+                class="bg-card border-solid border-gray-400 py-4 my-2 shadow-md flex flex-col justify-center items-center text-center lg:w-[25%] h-40  my-3 rounded-md border border-gray-200">
+                <h2 class="text-red-500 font-bold text-4xl">1054<span class="">+</span></h2>
+                <p class="font-semibold ">Total Layanan</p>
+              </div>
+          
+            </div>
+          
+          </div>
+  </div>
 
-  
-        </div>
-  
-      </div>
+</section>
+<!-- end data stistik -->
+
+<!-- bg besar bawah  -->
+<div class=""></div>
+<!-- end bg bawah -->
+
+<!-- data card -->
+<section id="data-statistik" class="pt-10 lg:pt-16">
+  <div class="container">
+    <div class="flex justify-center lg:pt-24 lg:pb-4">
+      <h1 class="font-semibold text-3xl">Keunggulan Kami</h1>
     </div>
-  </section>
-  <!-- end data stistik -->
+    <div class="flex flex-wrap justify-between box-border">
+      <div
+        class="w-full flex  flex-col justify-between lg:grid box-border items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
 
-  <!-- about start -->
-  <section id="about" class="pt-10 lg:pt-24 py-4 relative">
-    <div class="container">
-      <div class="flex box-border flex-col lg:gap-14 lg:flex-row-reverse lg:flex lg:justify-between justify-between lg:items-center">
-        <div class="w-full rounded-xl  bg-card-01 px-5 py-5 relative self-center flex flex-col px-3 lg:w-1/2">
-          <h1 class="text-2xl lg:text-3xl font-bold mt-1 lg:mb-5">Tentang <span class="text-red-500">Marketjunadi.com</span></h1>
-          <p class="mb-5 lg:mb-11 pt-4 font-extralight text-slate-800 leading-loose  text-base">Marketjunadi adalah Pusat untuk para Reseller Produk Digital, Jasa All Sosmed dan penyedia layanan sosial media seperti kebutuhan
-          Instagram Followers/Likes/Views/Comments/Facebook Friends/Youtube Subscribers/Watchtime, Pulsa All Operator, Token PLN,
-          Paket Data, Saldo E-money, Voucher Game, Tagihan PASCABAYAR dan masih banyak lagi layanan lainnya dengan harga termurah
+        <div
+          class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
+          <img src="assets/icons/service.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99"
+            alt="service">
+          <div>
+            <h3 class="text-black font-bold text-md lg:text-xl">Layanan Terbaik</h3>
+            <p class="font-normal text-left text-sm lg:text-md">Kami menyediakan berbagai layanan terbaik untuk
+              kebutuhan Anda.</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
+          <img src="assets/icons/rocket.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99"
+            alt="service">
+          <div>
+            <h3 class="text-black font-bold text-sm lg:text-xl">Proses Cepat</h3>
+            <p class="font-normal text-left text-xs lg:text-md">Pesanan Di Proses Secara Otomatis dan Instant,langsung
+              kepada Server kami.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
+          <img src="assets/icons/money.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99"
+            alt="service">
+          <div>
+            <h3 class="text-black font-bold text-sm lg:text-xl">Deposite Saldo</h3>
+            <p class="font-normal text-left text-xs lg:text-md">Deposit Otomatis 24 Jam,Memudahkan anda deposit kapan
+              saja.</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
+          <img src="assets/icons/support.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99"
+            alt="service">
+          <div>
+            <h3 class="text-black font-bold text-sm lg:text-xl">Pelayanan Bantuan</h3>
+            <p class="font-normal text-left text-xs lg:text-md">Kami menyediakan beberapa tempat bertanya atau komplain
+              mulai dari tiket
+              bantuan, telegram, whatsapp, facebook,
+              Instagram.</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
+          <img src="assets/icons/device.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99"
+            alt="service">
+          <div>
+            <h3 class="text-black font-bold text-sm lg:text-xl">Desain Responsive</h3>
+            <p class="font-normal text-left text-xs lg:text-md">Kami Menggunakan Desain Website Yang Dapat Diakses Dari
+              Berbagai Device,
+              Daik Smartphone Android Maupun Desktop.</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center my-3 rounded-md border border-gray-200 ">
+          <img src="assets/icons/code.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99"
+            alt="service">
+          <div>
+            <h3 class="text-black font-bold text-sm lg:text-xl">Integritas Api</h3>
+            <p class="font-normal text-left text-xs lg:text-md">Kami Menyediakan / support pemesanan via API, Sangat
+              Cocok Untuk Anda
+              Pengguna H2H / operan.</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end data stistik -->
+
+<!-- about start -->
+<section id="about" class="pt-10 lg:pt-24 py-4 relative">
+  <div class="container">
+    <div
+      class="flex box-border flex-col lg:gap-14 lg:flex-row-reverse lg:flex lg:justify-between justify-between lg:items-center">
+      <div class="w-full rounded-xl  bg-card-01 px-5 py-5 relative self-center flex flex-col px-3 lg:w-1/2">
+        <h1 class="text-2xl lg:text-3xl font-bold mt-1 lg:mb-5">Tentang <span
+            class="text-red-500">Marketjunadi.com</span></h1>
+        <p class="mb-5 lg:mb-11 pt-4 font-extralight text-slate-800 leading-loose  text-base">Marketjunadi adalah Pusat
+          untuk para Reseller Produk Digital, Jasa All Sosmed dan penyedia layanan sosial media seperti kebutuhan
+          Instagram Followers/Likes/Views/Comments/Facebook Friends/Youtube Subscribers/Watchtime, Pulsa All Operator,
+          Token PLN,
+          Paket Data, Saldo E-money, Voucher Game, Tagihan PASCABAYAR dan masih banyak lagi layanan lainnya dengan harga
+          termurah
           di Indonesia.</p>
 
-            <!-- color a -->
-            <div>
-              <img src="assets/images/color-a.svg" width="240"
-                class="border-none rounded-xl absolute top-36 -z-50 right-0 bottom-0" alt="">
-            </div>
-            <!-- end color a -->
-
-            <!-- color merah bg -->
-            <div>
-              <img src="assets/images/color-b.svg" width="240" class="border-none rounded-xl absolute top-3 -z-50 -left-16 bottom-0"
-                alt="">
-            </div>
-            <!-- end bg merah -->
-
-          <a href="#"
-            class="bg-primary text-sm lg:text-lg flex justify-center items-center font-semibold text-black h-11 w-60 lg:h-14 rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out ">Daftar Member</a>
+        <!-- color a -->
+        <div>
+          <img src="assets/images/color-a.svg" width="240"
+            class="border-none rounded-xl absolute top-36 -z-50 right-0 bottom-0" alt="">
         </div>
+        <!-- end color a -->
 
-        <div class="w-full flex items-center justify-center lg:pt-0 pt-16 box-border lg:w-1/2">
-          <img src="assets/images/smm.svg"
-            class="max-w-full mx-auto" alt="gambar kanan ">
+        <!-- color merah bg -->
+        <div>
+          <img src="assets/images/color-b.svg" width="240"
+            class="border-none rounded-xl absolute top-3 -z-50 -left-16 bottom-0" alt="">
         </div>
+        <!-- end bg merah -->
+
+        <a href="#"
+          class="bg-primary text-sm lg:text-lg flex justify-center items-center font-semibold text-black h-11 w-60 lg:h-14 rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out ">Daftar
+          Member</a>
+      </div>
+
+      <div class="w-full flex items-center justify-center lg:pt-0 pt-16 box-border lg:w-1/2">
+        <img src="assets/images/smm.svg" class="max-w-full mx-auto" alt="gambar kanan ">
       </div>
     </div>
-  </section>
-  <!-- end about -->
-
-
+  </div>
+</section>
+<!-- end about -->
 
 
 
