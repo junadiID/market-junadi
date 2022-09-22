@@ -4,7 +4,7 @@
 
 
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     @apply overflow-x-hidden
 }
 
@@ -24,6 +24,20 @@ body{
     height: 500px
 }
 
+.bg-element{
+    background-image: url(../icons/bg-elements-10.svg);
+}
+
+.bg-blob1{
+    background-image: url(../icons/blob-1.svg);
+    background-position: left;
+}
+
+.bg-blob2{
+    background-image: url(../icons/blob-2.svg);
+    background-position: right;
+}
+
 .bg-card{
     @apply bg-white bg-opacity-60;
     backdrop-filter: blur(5px);
@@ -41,6 +55,11 @@ body{
 
 .bg-card-02{
     @apply bg-gray-300 bg-opacity-20;
+    backdrop-filter: blur(5px);
+}
+
+.bg-blur-primary{
+    @apply bg-gray-100 bg-opacity-50;
     backdrop-filter: blur(5px);
 }
 

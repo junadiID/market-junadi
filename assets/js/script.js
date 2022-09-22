@@ -7,6 +7,7 @@
    navMenu.classList.toggle("hidden");
 }
 
+
 // scrol navbar fix
 window.onscroll = function(){
   const header = document.querySelector('header');
