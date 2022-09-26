@@ -8,6 +8,7 @@
 }
 
 
+
 // scrol navbar fix
 window.onscroll = function(){
   const header = document.querySelector('header');
