@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>RotasiPedia</title>
 </head>
-  <body class="conten-bg-warna overflow-y-auto">
+  <body class="conten-bg-warna overflow-y-auto overflow-x-hidden">
   
   
     <!-- header start -->
@@ -18,7 +18,8 @@
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-2">
-            <a href="#home" class=" font-bold text-xl lg:text-2xl flex text-red-600 py-4">RotasiPedia</a>
+            <a href="#home" class=" font-bold text-xl lg:text-2xl flex text-white py-4">RotasiPedia</a>
+            
           </div>
   
           <div class="flex items-center px-2">
@@ -107,7 +108,7 @@
         <div class="flex flex-wrap justify-between relative">
           <div class="w-full self-center px-3 lg:-mt-10 lg:w-1/2">
             <h1 class="text-4xl lg:text-6xl font-bold mt-1">SMM Panel & PPOB H2H Termurah</h1>
-            <p class="mb-10 pt-4 text-slate-500 leading-relaxed">Sebuah Platform bisnis yang menyediakan berbagai
+            <p class="mb-10 pt-4 text-black leading-relaxed">Sebuah Platform bisnis yang menyediakan berbagai
               kebutuhan
               Sosial Media seperti Instagram, Youtube, Facebook, Twitter,
               dll.
@@ -124,6 +125,37 @@
               class=" mx-auto absolute -top-72  right-0 translate-x-14 " alt="gambar kanan" width="621" >
           </div>
         </div>
+        
+          <!-- blob start -->
+          <div class="loading_cont absolute -top-80 -left-80 -z-30">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                  <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+                <linearGradient id="MyGradient">
+                  <stop offset="5%" stop-color="#40204c" />
+                  <stop offset="40%" stop-color="#a3225c" />
+                  <stop offset="100%" stop-color="#e24926" />
+                </linearGradient>
+              </defs>
+              <mask id="maska">
+                <g class="blobs">
+                  <circle class="blob" cx="440" cy="250" r="30" transform="rotate(0) translate(0, 0) rotate(0)" />
+                  <circle class="blob" cx="500" cy="320" r="70" transform="rotate(0) translate(0, 0) rotate(0)" />
+                  <circle class="blob" cx="300" cy="390" r="40" transform="rotate(0) translate(0, 0) rotate(0)" />
+                  <circle class="blob" cx="380" cy="390" r="80" transform="rotate(0) translate(0, 0) rotate(0)" />
+                  <circle class="blob" cx="470" cy="450" r="20" transform="rotate(0) translate(0, 0) rotate(0)" />
+                </g>
+              </mask>
+              <rect x="200" y="200" mask="url(#maska)" fill="url(#MyGradient)" width="400" height="400">
+            </svg>
+          </div>
+          <!-- end Blob -->
+
+
       </div>
     </section>
     <!-- end hero -->
@@ -519,6 +551,7 @@
   
   
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script src="assets/js/script.js" type="text/javascript">
 
 

@@ -21,7 +21,7 @@ body{
     background-repeat: no-repeat;
     background-position-y: 10px;
     background-size: cover;
-    height: 500px
+    height: 100%;
 }
 
 .bg-element{
@@ -104,4 +104,42 @@ body{
 ::-webkit-scrollbar-thumb {
     background: rgb(182, 182, 182); 
     border-radius: 5px;
+}
+
+
+/* blob css start */
+
+.loading_cont {
+ width: 100%;
+ height: 100%;
+}
+
+.loading_cont:before {
+ content: "";
+ width: 100%;
+ height: 100%;
+ background: url(https://next.atcom.gr/StaticData/Landing2017/Content/Media/dots-transparent.png) repeat scroll center center;
+ opacity: 0.05;
+}
+
+#loader {
+  display: inline-block;
+  width: 600px;
+  height: 800px;
+  /* margin-left: -400px;
+  margin-top: -400px; */
+}
+
+rect {
+ -webkit-transform-origin: 50% 50%;
+ transform-origin: 50% 50%;
+}
+
+.blobs {
+ -webkit-filter: url("#goo");
+ filter: url("#goo");
+}
+
+.blob {
+  fill: white;
 }
